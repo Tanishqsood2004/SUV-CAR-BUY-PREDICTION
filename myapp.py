@@ -1,13 +1,12 @@
 import os
-import streamlit as st
-import numpy as np
+import threading
+import webbrowser
+
 import pandas as pd
-import matplotlib.pyplot as plt
+import streamlit as st
+from sklearn.linear_model import LogisticRegression
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
-from sklearn.linear_model import LogisticRegression
-import webbrowser
-import threading
 
 # Load data
 suv_car_df = pd.read_csv('suv_data.csv')
